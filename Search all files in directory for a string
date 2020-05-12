@@ -1,0 +1,14 @@
+import os
+for root, _,files in os.walk("file_location", onerror=None):
+    for name in files:
+                try:
+                    file_path = os.path.join(root, name)
+                    with open(file_path, "rb") as f:
+                        for lines in f:
+                                    try: 
+                                        if "test" in line:
+                                            print(file_name)
+                                    except:
+                                        pass
+                except:
+                	pass
